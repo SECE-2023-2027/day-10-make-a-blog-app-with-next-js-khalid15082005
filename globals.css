@@ -1,0 +1,111 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fefdfc;
+  --foreground: #1a1a1a;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #121212;
+    --foreground: #f1f1f1;
+  }
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: 'Segoe UI', 'Roboto', sans-serif;
+  line-height: 1.6;
+  font-size: 16px;
+}
+
+/* Layout Container */
+.home-container {
+  padding: 40px 60px;
+  background: #111;
+  color: #fff;
+}
+
+/* Title */
+.page-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #ffffff;
+}
+
+/* Grid Layout */
+.blog-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+}
+
+/* Blog Card */
+.blog-card {
+  background: #fff;
+  color: #333;
+  width: 260px;
+  height: 260px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Image Part */
+.blog-image {
+  height: 110px;
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text Content */
+.blog-content {
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.blog-tag {
+  font-size: 11px;
+  color: #555;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.blog-title {
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2px 0;
+}
+
+.blog-meta {
+  font-size: 11px;
+  color: #777;
+  margin-bottom: 6px;
+}
+
+.blog-summary {
+  font-size: 13px;
+  color: #444;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.read-more {
+  font-size: 13px;
+  color: #007bff;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
